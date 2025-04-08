@@ -9,8 +9,10 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from sklearn.preprocessing import normalize
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Download necessary NLTK data
 nltk.download('stopwords', quiet=True)

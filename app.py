@@ -15,6 +15,7 @@ app = Flask(__name__)
 # Download necessary NLTK data
 nltk.download('stopwords', quiet=True)
 nltk.download('punkt', quiet=True)
+nltk.download('punkt_tab')
 
 def preprocess_text(text):
     # Convert to lowercase
